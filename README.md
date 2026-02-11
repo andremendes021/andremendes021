@@ -1,16 +1,24 @@
-## Hi there 👋
+# 👋 Olá, eu sou o André Souza Mendes
 
-<!--
-**andremendes021/andremendes021** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 Desenvolvedor Backend em formação  
+🎓 Estudante de Ciências da Computação  
+🚀 Focado em Java, Node.js e APIs REST  
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🧠 Tecnologias que estudo
+- Java
+- Node.js
+- MySQL
+- PostgreSQL
+- Git & GitHub
+
+---
+
+## 📌 Objetivo
+Conseguir minha primeira oportunidade como Desenvolvedor Backend Júnior ou Estágio e evoluir diariamente na área.
+
+---
+
+## 📫 Contato
+LinkedIn: ()
