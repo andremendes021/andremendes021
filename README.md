@@ -21,4 +21,4 @@ Conseguir minha primeira oportunidade como Desenvolvedor Backend Júnior ou Est�
 ---
 
 ## 📫 Contato
-LinkedIn: ()
+LinkedIn: (https://www.linkedin.com/in/andre-souza-mendes-546b66171/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
