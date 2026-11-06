@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>André Souza Mendes · Desenvolvedor Backend</title>
+  <meta name="description" content="Portfólio de André Souza Mendes: estudante de Ciências da Computação, desenvolvedor backend (Node.js, Java) com projetos full stack em produção." />
+  <meta name="theme-color" content="#0d1117" />
+  <meta property="og:title" content="André Souza Mendes · Desenvolvedor Backend" />
+  <meta property="og:description" content="Node.js, Java, PostgreSQL e APIs REST. Veja meus projetos e fale comigo." />
+  <meta property="og:type" content="website" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -133,6 +138,36 @@
     }
 
     .skill-card .techs { font-size: 13px; color: var(--text); font-weight: 500; }
+
+    .projects { display: grid; gap: 14px; }
+
+    .project {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 20px;
+    }
+
+    .project h3 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+    .project p { color: var(--muted); font-size: 14px; line-height: 1.65; }
+    .project .stack { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .project .stack span {
+      font-size: 12px;
+      color: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2px 10px;
+    }
+    .project .links { margin-top: 12px; font-size: 13px; display: flex; gap: 14px; }
+
+    a:focus-visible, button:focus-visible, input:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
 
     .learning-list { display: flex; flex-wrap: wrap; gap: 8px; }
 
@@ -382,11 +417,11 @@
     <h1>André Souza Mendes</h1>
     <p class="subtitle">Desenvolvedor Backend em formação &nbsp;·&nbsp; Ciências da Computação &nbsp;·&nbsp; Brasil</p>
     <div class="badges">
-      <a class="badge" href="https://www.linkedin.com/in/andre-souza-mendes-546b66171/" target="_blank">
+      <a class="badge" href="https://www.linkedin.com/in/andre-souza-mendes-546b66171/" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0z"/></svg>
         LinkedIn
       </a>
-      <a class="badge" href="https://github.com/andremendes021" target="_blank">
+      <a class="badge" href="https://github.com/andremendes021" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" fill="#e6edf3"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.1.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.29 3.46.99.11-.77.42-1.29.76-1.59-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
         GitHub
       </a>
@@ -411,7 +446,11 @@
       <div class="skills-grid">
         <div class="skill-card">
           <div class="category">Linguagens</div>
-          <div class="techs">Java · Node.js · JavaScript</div>
+          <div class="techs">Java · JavaScript · Node.js</div>
+        </div>
+        <div class="skill-card">
+          <div class="category">Frameworks</div>
+          <div class="techs">Express · Sequelize · React</div>
         </div>
         <div class="skill-card">
           <div class="category">Banco de Dados</div>
@@ -419,12 +458,49 @@
         </div>
         <div class="skill-card">
           <div class="category">Ferramentas</div>
-          <div class="techs">Git · GitHub</div>
+          <div class="techs">Git · GitHub · Vercel · Render</div>
         </div>
         <div class="skill-card">
           <div class="category">Conceitos</div>
           <div class="techs">APIs REST · OOP</div>
         </div>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>CondoPack</h3>
+          <p>
+            SaaS para controle de encomendas em condomínios, criado a partir da minha rotina como porteiro.
+            Perfis de acesso (admin e porteiro), registro de entregas com foto, histórico com estatísticas
+            e exportação em CSV e PDF.
+          </p>
+          <div class="stack">
+            <span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>React</span><span>Vite</span>
+          </div>
+          <div class="links">
+            <!-- TODO: descomente e coloque os links reais
+            <a href="URL_DO_REPOSITORIO" target="_blank" rel="noopener noreferrer">Código</a>
+            <a href="URL_DO_DEMO" target="_blank" rel="noopener noreferrer">Demo</a>
+            -->
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Sistema de gestão de aluguel</h3>
+          <p>
+            Aplicação para administrar imóveis de aluguel, com autenticação JWT, relatórios em PDF e Excel
+            e painel com gráficos. Backend e frontend separados no mesmo repositório.
+          </p>
+          <div class="stack">
+            <span>Express</span><span>Sequelize</span><span>PostgreSQL</span><span>JWT</span><span>React</span>
+          </div>
+          <div class="links">
+            <!-- TODO: link do repositório e do deploy -->
+          </div>
+        </article>
       </div>
     </section>
 
@@ -449,26 +525,26 @@
   </main>
 
   <footer>
-    Made with IBM Bob
+    © 2026 André Souza Mendes
   </footer>
 
   <!-- ── CHATBOT ── -->
-  <button id="chat-btn" title="Fale comigo">
+  <button id="chat-btn" title="Fale comigo" aria-label="Abrir chat com o assistente" aria-expanded="false" aria-controls="chat-window">
     <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.67 1.19 5.06 3.08 6.74L4 22l4.52-1.5C9.59 20.82 10.77 21 12 21c5.52 0 10-4.03 10-9S17.52 2 12 2zm1 13H7v-2h6v2zm2-4H7V9h8v2z"/></svg>
   </button>
 
-  <div id="chat-window">
+  <div id="chat-window" role="dialog" aria-label="Chat com o assistente do André">
     <div class="chat-header">
       <div class="bot-avatar">A</div>
       <div class="info">
         <div class="name">André Bot</div>
-        <div class="status-text">● online agora</div>
+        <div class="status-text">assistente virtual</div>
       </div>
     </div>
-    <div id="chat-messages"></div>
+    <div id="chat-messages" aria-live="polite"></div>
     <div class="chat-input-area">
-      <input id="chat-input" type="text" placeholder="Digite sua pergunta..." autocomplete="off" />
-      <button id="chat-send">
+      <input id="chat-input" type="text" placeholder="Digite sua pergunta..." aria-label="Sua pergunta" autocomplete="off" />
+      <button id="chat-send" aria-label="Enviar">
         <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
       </button>
     </div>
@@ -478,42 +554,55 @@
     // ── base de conhecimento ──
     const kb = [
       {
-        patterns: ["skills", "tecnologia", "tecnologias", "sabe", "conhece", "linguagem", "habilidade"],
-        answer: "Trabalho com <strong>Java</strong>, <strong>Node.js</strong> e <strong>JavaScript</strong>. Em banco de dados uso <strong>MySQL</strong> e <strong>PostgreSQL</strong>, e domino <strong>Git/GitHub</strong> para versionamento. 🚀"
+        patterns: ["ola", "oi", "hello", "hi", "hey", "bom dia", "boa tarde", "boa noite"],
+        answer: "Olá! 👋 Sou o assistente do André. Posso falar sobre skills, projetos, formação e contato. O que você quer saber?"
       },
       {
-        patterns: ["aprendendo", "aprender", "estudando", "estudar", "futuro", "próximo"],
-        answer: "Estou aprendendo <strong>Spring Boot</strong>, <strong>Docker</strong>, arquitetura de <strong>microsserviços</strong> e testes automatizados com <strong>JUnit</strong> e <strong>Jest</strong>. Sempre evoluindo! 📚"
+        patterns: ["projeto", "projetos", "condopack", "aluguel", "portfolio", "portfólio"],
+        answer: "Os destaques são o <strong>CondoPack</strong>, um SaaS de controle de encomendas para condomínios, e um <strong>sistema de gestão de aluguel</strong>. Os dois usam Node.js, Express, PostgreSQL e React. Veja os detalhes na seção <a href='#projetos'>Projetos</a>. 🚀"
+      },
+      {
+        patterns: ["skills", "tecnologia", "tecnologias", "sabe", "conhece", "linguagem", "habilidade", "stack"],
+        answer: "Trabalho com <strong>Java</strong>, <strong>Node.js</strong> e <strong>JavaScript</strong>. Em banco de dados uso <strong>MySQL</strong> e <strong>PostgreSQL</strong>, e no frontend <strong>React</strong>. Uso <strong>Git/GitHub</strong> no dia a dia. 🛠️"
+      },
+      {
+        patterns: ["aprendendo", "aprender", "estudando", "estudar", "futuro", "proximo"],
+        answer: "Estou aprendendo <strong>Spring Boot</strong>, <strong>Docker</strong>, arquitetura de <strong>microsserviços</strong> e testes automatizados com <strong>JUnit</strong> e <strong>Jest</strong>. 📚"
       },
       {
         patterns: ["linkedin", "contato", "falar", "email", "contratar", "vaga", "oportunidade"],
-        answer: "Pode me encontrar no <a href='https://www.linkedin.com/in/andre-souza-mendes-546b66171/' target='_blank'>LinkedIn</a> ou pelo GitHub <a href='https://github.com/andremendes021' target='_blank'>@andremendes021</a>. Estou disponível para oportunidades! 💼"
+        answer: "Pode me encontrar no <a href='https://www.linkedin.com/in/andre-souza-mendes-546b66171/' target='_blank' rel='noopener noreferrer'>LinkedIn</a> ou no GitHub <a href='https://github.com/andremendes021' target='_blank' rel='noopener noreferrer'>@andremendes021</a>. Estou disponível para oportunidades! 💼"
       },
       {
-        patterns: ["github", "projeto", "repositório", "código"],
-        answer: "Meu GitHub é <a href='https://github.com/andremendes021' target='_blank'>github.com/andremendes021</a>. Lá você pode ver meus projetos e acompanhar minha evolução. ⭐"
+        patterns: ["github", "repositorio", "codigo"],
+        answer: "Meu GitHub é <a href='https://github.com/andremendes021' target='_blank' rel='noopener noreferrer'>github.com/andremendes021</a>. Lá estão meus repositórios. ⭐"
       },
       {
-        patterns: ["formação", "faculdade", "curso", "estuda", "graduação", "universidade", "ciência"],
-        answer: "Estou cursando <strong>Ciências da Computação</strong> e focado em desenvolvimento backend. É uma área que me apaixona! 🎓"
+        patterns: ["formacao", "faculdade", "curso", "estuda", "graduacao", "universidade", "ciencia"],
+        answer: "Estou cursando <strong>Ciências da Computação</strong> com foco em desenvolvimento backend. 🎓"
       },
       {
-        patterns: ["objetivo", "meta", "plano", "quer", "busca", "procura", "estágio", "júnior", "emprego", "trabalho"],
-        answer: "Busco minha primeira oportunidade como <strong>Desenvolvedor Backend Júnior</strong> ou <strong>Estagiário</strong>. Quero contribuir em projetos reais e crescer junto com um bom time. 🎯"
-      },
-      {
-        patterns: ["quem", "você", "andre", "apresenta", "sobre", "bio"],
-        answer: "Sou o <strong>André Souza Mendes</strong>, desenvolvedor backend em formação. Apaixonado por tecnologia, APIs e resolver problemas com código. Prazer! 👋"
-      },
-      {
-        patterns: ["ola", "olá", "oi", "hello", "hi", "hey", "bom dia", "boa tarde", "boa noite"],
-        answer: "Olá! 👋 Sou o André Bot. Posso te contar sobre as skills do André, seus projetos, contato e muito mais. O que você quer saber?"
+        patterns: ["objetivo", "meta", "plano", "quer", "busca", "procura", "estagio", "junior", "emprego", "trabalho"],
+        answer: "Busco minha primeira oportunidade como <strong>Desenvolvedor Backend Júnior</strong> ou <strong>Estagiário</strong>, para contribuir em projetos reais e crescer junto com um bom time. 🎯"
       },
       {
         patterns: ["api", "rest", "backend", "servidor", "back-end"],
-        answer: "Tenho foco em <strong>desenvolvimento backend</strong> e APIs REST. Trabalho com Node.js e Java para criar serviços robustos e bem estruturados. ⚙️"
+        answer: "Meu foco é <strong>backend</strong> e <strong>APIs REST</strong>, com Node.js e Java. ⚙️"
+      },
+      {
+        patterns: ["quem", "voce", "andre", "apresenta", "sobre", "bio"],
+        answer: "Sou o <strong>André Souza Mendes</strong>, estudante de Ciências da Computação e desenvolvedor backend em formação. Gosto de APIs e de resolver problemas reais com código. 👋"
       }
     ];
+
+    const norm = t => t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    const esc = t => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+    // palavras curtas casam inteiras; as demais casam pelo início da palavra
+    const matches = (text, p) => {
+      const q = esc(norm(p));
+      return new RegExp("\\b" + q + (q.length < 4 ? "\\b" : "")).test(text);
+    };
 
     const suggestions = [
       "Quais são suas skills?",
@@ -533,6 +622,7 @@
     chatBtn.addEventListener("click", () => {
       isOpen = !isOpen;
       chatWindow.classList.toggle("open", isOpen);
+      chatBtn.setAttribute("aria-expanded", String(isOpen));
       if (isOpen && messagesEl.children.length === 0) {
         setTimeout(() => botSay(
           "Olá! 👋 Sou o <strong>André Bot</strong>. Pergunte o que quiser sobre o André — skills, contato, projetos e mais!",
@@ -545,7 +635,8 @@
     function addMsg(text, who) {
       const div = document.createElement("div");
       div.className = "msg " + who;
-      div.innerHTML = text;
+      if (who === "user") div.textContent = text;
+      else div.innerHTML = text;
       messagesEl.appendChild(div);
       messagesEl.scrollTop = messagesEl.scrollHeight;
       return div;
@@ -593,11 +684,10 @@
     }
 
     function getResponse(text) {
-      const normalized = text.toLowerCase()
-        .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      const normalized = norm(text);
 
       for (const item of kb) {
-        if (item.patterns.some(p => normalized.includes(p))) {
+        if (item.patterns.some(p => matches(normalized, p))) {
           return item.answer;
         }
       }
@@ -612,6 +702,10 @@
       inputEl.value = "";
       botSay(getResponse(trimmed));
     }
+
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape" && isOpen) chatBtn.click();
+    });
 
     sendBtn.addEventListener("click", () => handleUserMsg(inputEl.value));
 
